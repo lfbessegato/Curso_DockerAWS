@@ -3,7 +3,7 @@ jdk:
   - oraclejdk11
 before_install:
   - sudo apt-get update
-  - cd app/
+  - cd DockerToAWSWithJava/app/
   - echo "Let's start Maven Package!"
   - mvn clean package
   - cd ..
