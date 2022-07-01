@@ -3,7 +3,7 @@ jdk:
   - oraclejdk11
 before_install:
   - sudo apt-get update
-  - cd DockerToAWSWithJava/app/
+  - cd app/
   - echo "Let's start Maven Package!"
   - mvn clean package
   - cd ..
@@ -18,6 +18,6 @@ deploy:
     docker tag docker-to-aws-with-java:latest lfrbessegato/docker-to-aws-with-java:latest;
     docker push lfrbessegato/docker-to-aws-with-java;
   on:
-    branch: master
+    branch: main
 notifications:
   email: false
